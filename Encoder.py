@@ -14,22 +14,6 @@ def encode(password):
     return newPass
 
 
-def decode(newPass):
-    oldPass = ''
-    for x in newPass:
-        num = int(x)
-        if num == 0:
-            num = 7
-        elif num == 1:
-            num = 8
-        elif num == 2:
-            num = 9
-        else:
-            num = num - 3
-        oldPass += str(num)
-    return oldPass
-
-
 def menu():
     print("""
     Menu
